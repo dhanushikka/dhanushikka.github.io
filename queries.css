@@ -1,0 +1,80 @@
+
+/* until Computer Screens */
+@media only screen and (max-width: 1200px){
+    
+    .hero-text-box{
+        
+        width:100%;
+        padding: 0 2%;
+    
+    }
+    
+    .row{
+        padding: 0 2%
+    }
+}
+
+
+/* tablets */
+@media only screen and (max-width: 1023px){
+    body{
+        font-size: 18px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .mbtn:link,
+.mbtn:visited{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+    width: 20%;
+    
+}
+}
+
+
+/* Large phones */
+@media only screen and (max-width: 767px){
+.mbtn:link,
+.mbtn:visited{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+    width: 30%;
+    
+}
+    
+}
+
+
+/* Small phones */
+@media only screen and (max-width: 480px){
+    
+    .mbtn:link,
+.mbtn:visited{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+    width: 30%;
+    
+    
+}
+}
+
+
