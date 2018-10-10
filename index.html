@@ -1,8 +1,8 @@
     <!DOCTYPE html>
     <html lang="en">
         <head>
-            <!---<link rel="stylesheet" type="text/css" href ="vendors/css/normalize.css">--->
-            <!---<link rel="stylesheet" type="text/css" href ="vendors/css/grid.css">--->
+            <!---<link rel="stylesheet" type="text/css" href ="vendors/css/normalize.css"> ---->
+            <!---<link rel="stylesheet" type="text/css" href ="vendors/css/grid.css"> ---->
             <meta name = "viewport" content="width=device-width, initial-scale=1.0">
             
             <link rel ="stylesheet" type="text/css" href ="styles.css">
@@ -13,48 +13,66 @@
         </head>
         <body>
             <header>
+                <nav>
+                        <div class="row">
+                            <ul class="main-nav js--main-nav">
+                                <li><a href="#aboutme">About me</a></li>
+                                <li><a href="#exp">Experience</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                            </ul>
+                            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                        </div>
+                 </nav>
+                    
                 <div class = "hero-text-box">
                     <h1>Hello!<br>I'm Dhanushikka.</h1>
-                    <i class = "quote">"Be a force of nature"</i><br>
+                    <i class = "quote">developer, mentor, innovator</i><br>
                     <br>
-
-                    <a class ="btn btn-full" href = "#">About me</a>
+                    
+                    
+                    <a class ="btn btn-full js--scroll-to-about-me" href = "#">About me</a>
                     <a class ="btn btn-full" href = "#">Let's talk!</a>
                     <br><br>
                     <br><br>
-                    <a class ="mbtn mbtn-ghost" href = "#"><i class="fas fa-briefcase"></i><br><br>Experience</a>
-                    <a class ="mbtn mbtn-ghost" href = "#"><i class="fas fa-laptop-code"></i><br><br>Projects</a><br><br>
-                    <a class ="mbtn mbtn-ghost" href = "#"><i class="fas fa-cogs"></i><br><br>Skills</a>
-                    <a class ="mbtn mbtn-ghost" href = "#"><i class="fas fa-file"></i><br><br>Resume</a>
+                    <a class ="mbtn mbtn-ghost js--scroll-to-exp" href = "#"><i class="fas fa-briefcase"></i><br><br>Experience</a>
+                    <a class ="mbtn mbtn-ghost js--scroll-to-projects" href = "#"><i class="fas fa-laptop-code"></i><br><br>Projects</a><br><br>
+                    <a class ="mbtn mbtn-ghost js--scroll-to-skills" href = "#"><i class="fas fa-cogs"></i><br><br>Skills</a>
+                    <a class ="mbtn mbtn-ghost" href = "https://purdue0-my.sharepoint.com/:b:/g/personal/dravicha_purdue_edu/EQ9Exz4-tkRGsVaEx9fgZd4BrBLDQlbj7mux_KeazVNeGA?e=3y4yj3" target="_blank">
+                        <i class="fas fa-file"></i><br><br>
+                        Resume
+                    </a>
                     <br><br>
                     <br>
-                    <a href="https://github.com/dravicha" >
+                    <a href="https://github.com/dravicha" target ="_blank">
                         <div class = "soc-media" style="display: inline">
                             <i class ="fab fa-github">
                             </i>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/dhanushikka-ravichandiran-9539a788/">
+                    <a href="https://www.linkedin.com/in/dhanushikka-ravichandiran-9539a788/" target="_blank">
                         <div class = "soc-media" style="display: inline">
                             <i class ="fab fa-linkedin">    
                             </i>
                         </div>
-                    </a>    
+                    </a>
+                    
                 </div>   
             </header>
-            <section class = "section-common row">
+            <section class = "section-common row js--about-me" id = "aboutme">
                 <h2>
                 ABOUT ME
                 </h2>
                 <br>
                 <br>
                 <div class="expanded">
-                I am a second year Computer Science undergraduate student at Purdue University, West Lafayette and my interests include software development, developing mobile applications (iOS) and data mining. <br>
+                I am a second-year Computer Science student at Purdue University, West Lafayette with a declared minor in Management. <br>
+                I have been passionate about programming ever since I took my first coding classes in high school. Cracking logic to problems gave me immense joy and motivation. I have come a long way from there; majoring in Computer Science is the best decision I have taken. This innovation driven field is so vast and filled with incredible opportunities. <br>My interests include software development, developing mobile applications (iOS) and data mining. <br>
                 Currently seeking internship for Summer 2019 to leverage my existing skills and learn new technologies.
                 </div>
 
             </section>
-            <div class="ghost">
+            <div class="ghost purdue js--exp" id = "exp">
             <section class = "section-common row">
                 <h2>
                 WORK EXPERIENCE
@@ -63,7 +81,7 @@
                 <br>
                 <div class="expanded">
                         <h3>
-                        Teaching Assistant
+                        Teaching Assistant, Purdue University
                         </h3>
                     <i class="date">Spring 2018 &mdash; Present</i>
                         <br>
@@ -83,7 +101,7 @@
             </section>
             </div>
             
-            <section class ="section-common row">
+            <section class ="section-common row js--projects" id = "projects">
                 <h2>
                 PROJECTS
                 </h2>
@@ -147,7 +165,7 @@
             </section>
            
 
-            <div class="ghost">
+            <div class="ghost purdue js--skills" id="skills">
             <section class = "section-common row">
             <h2>
                 SKILLS
@@ -155,10 +173,7 @@
             <br>
             <br>
             <div class = "skill-row">
-                <div class = "column">
-                    Apart from the skills listed, I have a experience with other technologies such as Android, MySQL, Awk and Angular 2.    
-                </div>
-                <div class="column">
+            
                     <div class = "skills">
                         <div class = "skills-label">
                             <h3>C++</h3>
@@ -241,10 +256,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
             </section>
             </div>
         </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="jquery.waypoints.min.js"></script>
+        <script src="script.js"></script>
     </html>
 
     <!---

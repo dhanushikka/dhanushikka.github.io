@@ -24,10 +24,8 @@ html{
     width: 50%;
 }
 
-.skill-row:after{
-    content: "";
-    display: table;
-    clear: both;
+.skill-row:{
+    text-align: center;
 }
 
 header{
@@ -35,6 +33,36 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+/* Main navi */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
 
 .ghost{
@@ -66,6 +94,19 @@ h2{
     color: #c9c9d4;
     
 }
+
+.purdue{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.71)),url(images/purdue.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.purdue .section-common{
+    color: #F4B350
+}
+
 .hero-text-box{
     position: absolute;
     width:1140px;
@@ -167,10 +208,10 @@ h2{
 /* SKILLS */
 
 .skills{
-    text-align: center;
+    text-align: justify;
     width: 50%;
     position: : relative;
-    padding: 5px 10px;
+    padding: 5px 4px;
     margin: 10px 0;
     border: 1px solid rgba(255,255,255,255,0.1);
     font-size: 15px;
@@ -202,7 +243,7 @@ h2{
     left: 0;
     width: 90%;
     height: 100%;
-    background: black;
+    background:#F4B350 ;
 }
 
 .skills .bar .progress:before{
@@ -213,5 +254,28 @@ h2{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: black;
+    background: #F4B350;
 }
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 2px 2px #191919;
+    opacity: 0.7;
+}
+
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 10px 0;
+    color: #F4B350;
+}
+
+.sticky .main-nav {
+    margin-top: 15px;
+}
+
