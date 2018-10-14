@@ -210,6 +210,14 @@ h2{
     font-weight: lighter;
 }
 
+.purdue h4{
+    color: #cf6d17;
+}
+
+h4 .role{
+    color: azure;
+}
+
 /* SKILLS */
 
 .skills{
@@ -247,7 +255,7 @@ h2{
     left: 0;
     width: 90%;
     height: 100%;
-    background:#F4B350 ;
+    background: black ;
 }
 
 .skills .bar .progress:before{
@@ -258,7 +266,7 @@ h2{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #F4B350;
+    background: black;
 }
 
 .sticky{

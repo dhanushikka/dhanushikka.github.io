@@ -80,7 +80,9 @@
         font-size: 150%;
     }
     
-    
+    h4 div{
+        color: azure;
+    }
     
     .main-nav {
         display: none;
