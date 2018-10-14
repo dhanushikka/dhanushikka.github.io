@@ -119,6 +119,11 @@ h2{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+.disappear{
+    visibility: hidden;
+}
+
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -270,6 +275,7 @@ h4 .role{
 }
 
 .sticky{
+    visibility: visible;
     position: fixed;
     top: 0;
     left: 0;

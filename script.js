@@ -2,11 +2,13 @@ $(document).ready(function() {
     
     $('.js--about-me').waypoint(function(direction){
         if(direction == "down"){
+            $('nav').removeClass('disappear');
             $('nav').addClass('sticky');
+           
         }
         else{
             $('nav').removeClass('sticky');
-
+            $('nav').addClass('disappear');
         }
     }, {
     	offset: '170px;'
@@ -24,6 +26,10 @@ $(document).ready(function() {
     
     $('.js--scroll-to-projects').click(function () {
        $('html, body').animate({scrollTop: $('.js--projects').offset().top}, 1000); 
+    });
+    
+    $('.js--scroll-to-inv').click(function () {
+       $('html, body').animate({scrollTop: $('.js--inv').offset().top}, 1000); 
     });
     
     $('.js--scroll-to-skills').click(function () {
