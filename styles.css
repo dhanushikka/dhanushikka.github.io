@@ -7,6 +7,7 @@
 
 html{
     background-color: #F4B350;
+    
     color: #555555;
     font-family:'Lato','Arial', sans-serif;
     font-size: 20px;
@@ -29,7 +30,7 @@ html{
 }
 
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.41),rgba(0, 0, 0, 0.51)),url(Screen%20Shot%202018-10-08%20at%207.56.15%20PM.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.41),rgba(0, 0, 0, 0.51)),url(bg.JPG);
     background-size: cover;
     background-position: center;
     height: 100vh;
